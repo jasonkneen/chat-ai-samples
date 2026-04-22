@@ -4,11 +4,11 @@
 }
 
 .tut__channel-preview--active {
-	background-color: var(--str-chat__primary-surface-color);
+	background-color: var(--str-chat__background-utility-selected);
 }
 
 .tut__channel-preview__text {
 	font-size: 1rem;
 	font-weight: 500;
-	color: var(--str-chat__text-color);
+	color: var(--str-chat__text-primary);
 }
