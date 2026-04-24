@@ -1,4 +1,4 @@
-@layer stream, stream-overrides, stream-ai;
+@layer stream, stream-overrides, stream-ai, stream-ai-overrides;
 
 @import "material-symbols/rounded.css";
 @import url("stream-chat-react/css/index.css") layer(stream);
@@ -55,9 +55,16 @@ body {
 
 	.str-chat__message--other .str-chat__message-bubble {
 		max-width: unset;
+		width: 100%;
 	}
 
 	.str-chat__message--other .str-chat__message-inner {
 		margin-inline-end: 0;
+	}
+}
+
+@layer stream-ai-overrides {
+	.aicr__pre {
+		white-space: break-spaces;
 	}
 }
