@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		84144E042EB8E95D00D0D034 /* MCP in Frameworks */ = {isa = PBXBuildFile; productRef = 84144E032EB8E95D00D0D034 /* MCP */; };
 		8464FB542EABCB5B00933768 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8464FB532EABCB5B00933768 /* StreamChatSwiftUI */; };
+		84E231232FC47FB200BABAF0 /* GenUI in Frameworks */ = {isa = PBXBuildFile; productRef = 84E231222FC47FB200BABAF0 /* GenUI */; };
 		84F35D3E2EDA5E6A0014D30F /* StreamChatAI in Frameworks */ = {isa = PBXBuildFile; productRef = 84F35D3D2EDA5E6A0014D30F /* StreamChatAI */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84144E042EB8E95D00D0D034 /* MCP in Frameworks */,
+				84E231232FC47FB200BABAF0 /* GenUI in Frameworks */,
 				84F35D3E2EDA5E6A0014D30F /* StreamChatAI in Frameworks */,
 				8464FB542EABCB5B00933768 /* StreamChatSwiftUI in Frameworks */,
 			);
@@ -85,6 +87,7 @@
 				8464FB532EABCB5B00933768 /* StreamChatSwiftUI */,
 				84144E032EB8E95D00D0D034 /* MCP */,
 				84F35D3D2EDA5E6A0014D30F /* StreamChatAI */,
+				84E231222FC47FB200BABAF0 /* GenUI */,
 			);
 			productName = AIComponents;
 			productReference = 8464FB412EABCAB100933768 /* AIComponents.app */;
@@ -118,6 +121,7 @@
 				8464FB522EABCB5B00933768 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
 				84144E022EB8E95D00D0D034 /* XCRemoteSwiftPackageReference "swift-sdk" */,
 				84F35D3C2EDA5E6A0014D30F /* XCRemoteSwiftPackageReference "stream-chat-swift-ai" */,
+				84E231212FC47FB200BABAF0 /* XCRemoteSwiftPackageReference "GenUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8464FB422EABCAB100933768 /* Products */;
@@ -383,6 +387,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		84E231212FC47FB200BABAF0 /* XCRemoteSwiftPackageReference "GenUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/martinmitrevski/GenUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		84F35D3C2EDA5E6A0014D30F /* XCRemoteSwiftPackageReference "stream-chat-swift-ai" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/GetStream/stream-chat-swift-ai.git";
@@ -403,6 +415,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8464FB522EABCB5B00933768 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
 			productName = StreamChatSwiftUI;
+		};
+		84E231222FC47FB200BABAF0 /* GenUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84E231212FC47FB200BABAF0 /* XCRemoteSwiftPackageReference "GenUI" */;
+			productName = GenUI;
 		};
 		84F35D3D2EDA5E6A0014D30F /* StreamChatAI */ = {
 			isa = XCSwiftPackageProductDependency;
