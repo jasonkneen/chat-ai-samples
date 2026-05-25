@@ -389,7 +389,7 @@ struct AIAgentOverlayView: View {
 }
 
 class CustomViewFactory: ComposerViewFactory {
-    func makeLeadingComposerView(options: LeadingComposerViewOptions) -> some View {
+    func makeLeadingComposerView(options: StreamChatAI.LeadingComposerViewOptions) -> some View {
         EmptyView()
     }
 }
